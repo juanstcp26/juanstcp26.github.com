@@ -8,7 +8,7 @@ links.forEach(function (link) {
         evento.preventDefault();
 
         setTimeout(function () {
-            location.href = "/";
+            location.href = "/boletines";
         },500);
 
         return false;
