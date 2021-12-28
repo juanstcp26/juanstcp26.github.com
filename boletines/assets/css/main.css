@@ -1,0 +1,153 @@
+/* COMENTARIO 
+Marrón:         514B23
+Marrón clarito: 656839
+Verde Agua:     00a896
+Blanco:         ffffff
+Rosa opaco:     ffe8d1
+
+Página para fuentes de letra:  https://fonts.google.com/
+Página para encontrar combinaciones de colores:  https://coolors.co/generate
+
+En el CMD ingresar a su carpeta y luego poner esto: static -p 8000
+*/  
+
+html{
+    font-family: 'Comic Neue', cursive;
+}
+
+a{
+    text-decoration: none;
+    color: #00a896;
+}
+
+img{
+    max-width: 100%;
+}
+
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container{
+    background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    height: 100vh; /* X vh = " X% del total de la pantlla" */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    max-width: 960px;
+    width: 100%;
+    height: 80vh;
+    background-color: #FFE8D1;
+    /* diferenciaHorizontal, diferenciaVertical, desenfoque, amplitud, color */
+    box-shadow: 0 3px 20px 12px #00a896;
+    border-radius: 4px;
+    position: relative;
+    padding: 1.8em;
+    /* overflow es para las diferentes resoluciones de pantalla*/
+    overflow: scroll;
+}
+
+   .content{
+        padding: 1em;
+    }
+    td{
+        display: block;
+        width: 100%;
+    }
+    td:nth-of-type(1){
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #00a896;
+    }
+    th{
+        display: none;
+    }
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    color: #00a896;
+    border-radius: 50%;
+    background-color: #96e6a1;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph{
+    line-height: 1.8em;
+    font-weight: 200;
+}
+
+.fa-star{
+    color: #ffc400;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, table th{
+    padding: 1em;
+    text-align: left;
+}
+
+.table tr:nth-child(even){ background-color: #96e6a1;}
+
+.title-item{
+    font-size: 2em;
+    border-bottom: solid 5px #00a896;
+    padding-bottom: 1em;
+}
+
+.main-image{
+    float: left;
+    margin-right: 1em;
+    height: 300px;
+}
+
+.position{
+    background-color: #96e6a1;
+    color: #00a896;
+    padding: 0.3em;
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+
+@media (min-width:900px){
+    th{
+        display: table-cell;
+        color: #00a896;
+    }
+    td{
+        display: table-cell;
+        width: auto;
+    }
+    td:nth-of-type(1){
+        font-size: 1em;
+    }
+   .content{
+        padding: 1.8em;
+    }
+}
+
+@media (min-height:550px){
+    .content{
+        height: 500px;
+    }
+}
